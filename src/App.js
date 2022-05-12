@@ -6,7 +6,6 @@ import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
 import Notification from 'components/Notification';
 
-
 class App extends Component{
     state = {
         contacts: [],
@@ -17,11 +16,16 @@ class App extends Component{
         const { contacts } = this.state;
 
         if (contacts.find(contact => contact.name.toLowerCase() === data.name.toLowerCase())) {
+            this.setState({
+                filter: ''
+            });
+            
             return alert(`${data.name} is already in contacts`);
         }
 
         this.setState(prevState => ({
-            contacts: [...prevState.contacts, data]
+            contacts: [...prevState.contacts, data],
+            filter: ''
         }));
     }
 
