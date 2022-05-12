@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './Label.module.css';
 
 const Label = ({ labelTitle, children}) => {
-    return <label>
+    return <label className={s.label}>
         {labelTitle}
         {children}
     </label>

@@ -57,7 +57,7 @@ class App extends Component{
                     {contacts.length > 0 ? (
                         <ContactList data={contacts} filterName={filter} onDeleteContact={ deleteContact }/>
                     ) : (
-                        <Notification message="There is no contacts yet" />
+                        <Notification message="There are no contacts yet" />
                     )}
                 </Section>
             </Wrapper>

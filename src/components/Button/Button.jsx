@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './Button.module.css';
 
 const Button = ({type, title }) => {
-    return <button type={type}>{ title }</button>
+    return <button type={type} className={s.button}>{ title }</button>
 }
 
 Button.propTypes = {

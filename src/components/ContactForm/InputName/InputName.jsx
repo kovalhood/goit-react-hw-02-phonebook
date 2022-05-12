@@ -11,6 +11,7 @@ const InputName = ({ name, onNameChange}) => {
       placeholder='Enter name'
       value={name}
       onChange={onNameChange}
+      className={s.input}
       // onKeyPress={(event) => {
       //   if (!/^[A-Za-z]+$/.test(event.key)) {
       //     event.preventDefault();

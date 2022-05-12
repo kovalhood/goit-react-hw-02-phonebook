@@ -53,7 +53,7 @@ class ContactForm extends Component{
         const { name, number } = this.state;
         const { handleSubmit, handleInputChange } = this;
 
-        return (<form onSubmit={handleSubmit}>
+        return <form onSubmit={handleSubmit} className={s.form}>
             <Label labelTitle={'Name'}>
                 <InputName name={name} onNameChange={handleInputChange}/>
             </Label>
@@ -63,7 +63,7 @@ class ContactForm extends Component{
             </Label>
             
             <Button type={'submit'} title={"Add contact"} />
-    </form>)
+    </form>
     };
 };
 
