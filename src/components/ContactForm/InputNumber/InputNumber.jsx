@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import s from './InputNumber.module.css';
-import NumberFormat from 'react-number-format';
 
 const InputNumber = ({ number, onNumberChange}) => {
     return <input
@@ -12,6 +11,7 @@ const InputNumber = ({ number, onNumberChange}) => {
       placeholder='Enter number'
       value={number}
       onChange={onNumberChange}
+      className={s.input}
       // onKeyPress={(event) => {
       //   if (!/[+-0-9/(/)/]/.test(event.key)) {
       //     event.preventDefault();
