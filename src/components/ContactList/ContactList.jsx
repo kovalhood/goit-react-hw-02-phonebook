@@ -11,7 +11,7 @@ const ContactList = ({ data, filterName, onDeleteContact }) => {
           <button type='button'
             onClick={() => onDeleteContact(id)}
             className={s.delete}>
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i className="fa fa-times" aria-hidden="true"></i>
           </button>
       </li>
     ))}
